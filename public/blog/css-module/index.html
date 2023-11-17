@@ -1,0 +1,262 @@
+<!DOCTYPE html><html lang="zh-CN" style="font-size: 14px"> <head><script>
+        
+        const setDarkMode = () => {
+            document.documentElement.classList.add('dark')
+            if (localStorage.darkMode === 'true' || (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark')
+                localStorage.darkMode = 'true';
+            } else {
+                document.documentElement.classList.remove('dark')
+                localStorage.darkMode = 'false';
+            }
+        }
+
+        setDarkMode();
+        // // Runs on view transitions navigation
+        document.addEventListener('astro:after-swap', setDarkMode);
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="view-transition" content="same-origin"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="./rss.xml"><title>css-modules 使用说明 | Pacamara ☕</title><meta name="title" content="css-modules 使用说明 | Pacamara ☕"><meta name="description" content="Aromatic brew, pure indulgence, exquisite satisfaction.Default description"><!-- Open Graph Tags (Facebook) --><meta property="og:type" content="blog"><meta property="og:title" content="css-modules 使用说明 | Pacamara ☕"><meta property="og:url" content="https://pacamara-astro-6y7xr.kinsta.page/blog/css-module/"><meta property="og:description" content="Aromatic brew, pure indulgence, exquisite satisfaction.Default description"><meta property="og:image" content="https://pacamara-astro-6y7xr.kinsta.page/_astro/css-modules-logo.109c4607.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:title" content="css-modules 使用说明 | Pacamara ☕"><meta property="twitter:url" content="https://pacamara-astro-6y7xr.kinsta.page/blog/css-module/"><meta property="twitter:description" content="Aromatic brew, pure indulgence, exquisite satisfaction.Default description"><meta property="twitter:image" content="/_astro/css-modules-logo.109c4607.jpg"><!-- <link rel="preload" href="/fonts/inter-v12-latin_latin-ext-regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/inter-v12-latin_latin-ext-700.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/space-grotesk-v15-latin_latin-ext-regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/space-grotesk-v15-latin_latin-ext-600.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/space-grotesk-v15-latin_latin-ext-700.woff2" as="font" crossorigin> --><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/_astro/_slug_.92943a59.css" /><script type="module" src="/_astro/hoisted.41e41f80.js"></script><style>[data-astro-transition-scope="astro-t25pmcvj-1"] { view-transition-name: astro-t25pmcvj-1; }@layer astro { ::view-transition-old(astro-t25pmcvj-1) { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(astro-t25pmcvj-1) { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(astro-t25pmcvj-1) { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(astro-t25pmcvj-1) { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-t25pmcvj-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-t25pmcvj-1"] { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-t25pmcvj-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-t25pmcvj-1"] { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-t25pmcvj-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-t25pmcvj-1"] { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-t25pmcvj-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-t25pmcvj-1"] { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head> <body class="font-pacamara-inter transition-all duration-300 bg-white dark:bg-pacamara-dark" data-astro-transition-scope="astro-t25pmcvj-1"> <div class="navigation flex-1 hidden absolute top-0 left-0 w-full bg-pacamara-white dark:bg-pacamara-dark transition-all duration-300 p-7 pt-[112px] z-10 shadow-2xl" id="navigation_wrapper"> <nav> <ul class="list-none text-[14px] font-normal flex flex-initial flex-col md:flex-row gap-5"> <li> <a href="/" class="opacity-60 text-pacamara-primary hover:opacity-100 hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">Home</a> </li> <li> <a href="/blog" class="opacity-60 text-pacamara-primary hover:opacity-100 hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">Blog</a> </li> <li> <a href="/about-me" class="opacity-60 text-pacamara-primary hover:opacity-100 hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">About me</a> </li> </ul> </nav> </div> <header class="container mx-auto max-w-screen-xl px-7 py-10 bg-white flex flex-initial flex-row gap-10 items-center justify-between transition-all duration-300 dark:bg-pacamara-dark relative z-20"> <div class="logo flex-none"> <a href="/" class="font-bold font-pacamara-space text-lg hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">Libin Song</a> </div> <div class="navigation flex-1 hidden md:block"> <nav> <ul class="list-none text-[14px] font-normal flex flex-initial flex-col md:flex-row gap-5"> <li> <a href="/" class="opacity-60 text-pacamara-primary hover:opacity-100 hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">Home</a> </li> <li> <a href="/blog" class="opacity-60 text-pacamara-primary hover:opacity-100 hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">Blog</a> </li> <li> <a href="/about-me" class="opacity-60 text-pacamara-primary hover:opacity-100 hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">About me</a> </li> </ul> </nav> </div> <div class="relative flex flex-initial flex-row items-center gap-5"> <button id="mode_switcher" class="group" title="Switch mode"> <svg height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" class="w-8 h-auto fill-pacamara-secondary transition-all duration-300 hover:fill-pacamara-accent dark:fill-white dark:hover:fill-pacamara-accent"> <path d="m12 18a6 6 0 1 1 6-6 6 6 0 0 1 -6 6zm0-10a4 4 0 1 0 4 4 4 4 0 0 0 -4-4z"></path><path d="m12 15a1 1 0 0 1 -1-1v-4a1 1 0 0 1 1-1 3 3 0 0 1 0 6z"></path><path d="m12 5a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1z"></path><path d="m17.66 7.34a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29z"></path><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2z"></path><path d="m18.36 19.36a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path><path d="m12 22a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1z"></path><path d="m5.64 19.36a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24z"></path><path d="m4 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2z"></path><path d="m6.34 7.34a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29z"></path></svg> </button>  <button id="menu_toggle" class="block md:hidden text-white" type="button" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation"> <svg class="w-8 h-auto fill-pacamara-dark stroke-pacamara-dark transition-all duration-300 hover:fill-pacamara-accent hover:stroke-pacamara-accent dark:fill-pacamara-accent dark:stroke-pacamara-accent dark:hover:fill-pacamara-secondary dark:hover:stroke-pacamara-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg> </button>  </div> </header>  <article class="px-7 pt-10 mx-auto w-full"> <div class="mx-auto
+      prose lg:prose-xl prose-headings:font-bold prose-headings:text-pacamara-dark prose-headings:mb-3
+      "> <h1 class="transition-all duration-300 dark:text-white">css-modules 使用说明</h1> <p class="flex flex-row flex-wrap gap-5 items-center font-pacamara-space mx-auto max-w-screen-lg mb-7"> <span class="group text-[16px] bg-transparent border-pacamara-secondary border-[1px] leading-none rounded-full flex flex-row content-center items-center h-[34px] px-3 text-pacamara-secondary"><span>css</span></span> <small class="
+        text-pacamara-primary/50 font-pacamara-space tracking-widest transition-all duration-300 text-[16px]
+        dark:text-white/40
+    "> 30-06-2023
+— 5 min read
+</small> </p> </div> <img src="/_astro/css-modules-logo.109c4607_1iXhR4.webp" alt="" loading="eager" decoding="sync" class="block relative mx-auto mt-10 object-cover h-72 md:h-[350px] image-shine rounded-[15px]" width="1200" height="250"> <div class="
+        lg:px-0 pt-10 mb-5 mx-auto
+        prose lg:prose-xl
+        prose-headings:transition-all prose-headings:duration-300 prose-headings:font-pacamara-space prose-headings:font-bold prose-headings:text-pacamara-accent prose-headings:mb-0 prose-headings:pb-3 prose-headings:mt-6
+        prose-p:transition-all prose-p:duration-300 prose-p:text-pacamara-primary/80 
+        prose-li:transition-all prose-li:duration-300 prose-li:text-pacamara-primary/80
+        prose-td:transition-all prose-td:duration-300 prose-td:text-pacamara-primary/80
+        prose-a:underline prose-a:font-semibold prose-a:transition-all prose-a:duration-300 prose-a:text-pacamara-accent hover:prose-a:text-pacamara-dark
+        prose-strong:transition-all prose-strong:duration-300 prose-strong:font-bold
+        prose-hr:transition-all prose-hr:duration-300 prose-hr:border-pacamara-secondary/40
+        prose-img:rounded-lg prose-img:mx-auto 
+        prose-code:transition-all prose-code:duration-300 prose-code:text-pacamara-dark
+        dark:prose-headings:text-pacamara-accent dark:prose-p:text-white/70 dark:prose-a:text-white dark:hover:prose-a:text-pacamara-accent dark:prose-strong:text-white dark:prose-li:text-white dark:prose-code:text-white dark:prose-td:text-white/70 dark:prose-hr:border-pacamara-accent/30 dark:prose-tr:border-pacamara-accent/30 dark:prose-thead:border-pacamara-accent/30
+      "> <p>css-modules 解决了传统 CSS 中命名冲突、作用域污染和样式维护困难的问题，提供了更好的样式模块化和组织方式，使得前端开发更加易于管理和扩展。以下你将详细了解
+css-modules 的优点和解决的问题, 以及如何配置css-modules</p>
+<h2 id="全局作用域样式污染">全局作用域样式污染</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#B392F0"> Header1</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> () </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> className</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;header-container&quot;</span><span style="color:#E1E4E8">&gt;header&lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#B392F0"> Header2</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> () </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> className</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;header-container&quot;</span><span style="color:#E1E4E8">&gt;header&lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">};</span></span></code></pre>
+<p>以上有两个组件使用了一样的样式名, 那么在同一个页面渲染后就会出现样式冲突, 在作者工作的项目中由于使用到了微前端的架构,
+该问题在同一个页面中若用到不同项目中的组件样式污染的问题会尤为突出</p>
+<p>针对该问题传统的解决方案是在团队使用<a href="https://getbem.com">BEM</a>等css方法论, 但由于此类方案需要约束开发人员编码规范,
+需要一定程度的口头编码规范, 实施起来阻碍偏大, 并不完全适合真实的业务场景。而css-modules的设计完美可以解决这个问题</p>
+<h2 id="样式名取名困难-样式名嵌套层级过深">样式名取名困难, 样式名嵌套层级过深</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#6A737D">// 一个组件的dom结构可能是这样的</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#B392F0"> Test</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> () </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> className</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;test-conainer&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">      &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> className</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;test-conainer-header&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">        &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> className</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;test-left&quot;</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">        &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> className</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;test-rigjt&quot;</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">      &lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  )</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h2 id="css-modules">css-modules</h2>
+<p>根据官方文档, css modules处理过的类名  都在本地作用域下, css modules旨在解决css的全局范围污染问题, css modules有几个优点</p>
+<ol>
+<li>每个css文件只适用于被引用的那个组件, 不会影响到全局范围内的其他组件 (no more global scope)</li>
+<li>一个组件的样式完全来源于一个css文件(全局覆盖样式除外) (没有冲突)</li>
+<li>显性依赖</li>
+</ol>
+<h4 id="1-基础使用">1. 基础使用</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#F97583">import</span><span style="color:#E1E4E8"> styles </span><span style="color:#F97583">from</span><span style="color:#9ECBFF"> &#39;./test.module.css&#39;</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#B392F0"> Test</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> () </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> className</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">{styles.container}&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">      &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> className</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">{styles.header} /&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">      &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> className</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">{styles.headerRight} /&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;	</span></span>
+<span class="line"><span style="color:#E1E4E8">  )</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#6A737D">/* test-module.css */</span></span>
+<span class="line"><span style="color:#B392F0">.container</span><span style="color:#E1E4E8"> {}</span></span>
+<span class="line"><span style="color:#B392F0">.header</span><span style="color:#E1E4E8"> {}</span></span>
+<span class="line"><span style="color:#6A737D">/* 推荐使用驼峰命名 */</span></span>
+<span class="line"><span style="color:#B392F0">.headerRight</span><span style="color:#E1E4E8"> {}</span></span>
+<span class="line"><span style="color:#6A737D">/* 如果没有有不想被编译的类名 那么可以写成 如下other类名将不会被编译 始终具有全局域效果 */</span></span>
+<span class="line"><span style="color:#E1E4E8">:global(</span><span style="color:#B392F0">.other</span><span style="color:#E1E4E8">) {}</span></span></code></pre>
+<p>编译后结果</p>
+<img src="/_astro/productComplie.b59d9028_262GE.webp" style="text-align:left;margin-left:0" alt="" width="221" height="171" loading="lazy" decoding="async">
+<p>如上编译后类名被编译成hash格式确保类名唯一 以隔绝名称冲突的问题😎, 编译后类名名称可自定义, 建议生产使用[hash:64], 开发环境使用文件路径</p>
+<h4 id="2-组合类名">2. 组合类名</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#B392F0">.flex</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  display</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">flex</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  justify-content</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">center</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  align-items</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">center</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">.container</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6A737D">  /* 额外样式如 font-size等 */</span></span>
+<span class="line"><span style="color:#6A737D">  /*</span></span>
+<span class="line"><span style="color:#6A737D">  使用composes关键字复用flex通用类, 不用额外定义 </span></span>
+<span class="line"><span style="color:#6A737D">  在vscode可能报关键词error, 需要在配置文件加上&quot;css.lint.validProperties&quot;: [&quot;composes&quot;]</span></span>
+<span class="line"><span style="color:#6A737D">   */</span></span>
+<span class="line"><span style="color:#79B8FF">  composes</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">flex</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h4 id="3-显性依赖">3. 显性依赖</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#B392F0">.flex</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  display</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">flex</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  justify-content</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">center</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  align-items</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">center</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">.container</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  width</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">100</span><span style="color:#F97583">px</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF">  composes</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">flex</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#6A737D">  /** 允许组合多个 同时允许引入其他文件中的类名, 这样帮助我们了解所有样式中的出处显性依赖 */</span></span>
+<span class="line"><span style="color:#79B8FF">  composes</span><span style="color:#E1E4E8">: other from </span><span style="color:#9ECBFF">&#39;./other.module.css&#39;</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h4 id="4-使用变量">4. 使用变量</h4>
+<p>项目中我们可能有多种主题, 我们需要一个文件统一管理这些常量 颜色, 间距, 字体等
+使用前提<a href="https://webpack.docschina.org/loaders/css-loader/#namedexport">namedExport</a>需打开</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#6A737D">/** config/variable.module.css */</span></span>
+<span class="line"><span style="color:#6A737D">/** 推荐对特定的值使用 v- 的前缀，给选择器使用 s- 的前缀，并且为媒体规则使用 m- 前缀。*/</span></span>
+<span class="line"><span style="color:#F97583">@value</span><span style="color:#E1E4E8"> v-blue: #0c77f8;</span></span>
+<span class="line"><span style="color:#F97583">@value</span><span style="color:#E1E4E8"> v-red: #ff0000;</span></span>
+<span class="line"><span style="color:#F97583">@value</span><span style="color:#E1E4E8"> v-green: #aaf200;</span></span>
+<span class="line"><span style="color:#F97583">@value</span><span style="color:#E1E4E8"> s-black: black-selector;</span></span>
+<span class="line"><span style="color:#F97583">@value</span><span style="color:#E1E4E8"> m-large: (min-width: 960px);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">/** 使用 </span></span>
+<span class="line"><span style="color:#6A737D">test.module.css</span></span>
+<span class="line"><span style="color:#6A737D">*/</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">@value</span><span style="color:#E1E4E8"> v-red, v-blue, s-black, m-large from &#39;config/variable.module.css&#39;;</span></span>
+<span class="line"><span style="color:#B392F0">.container</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  background</span><span style="color:#E1E4E8">: v-blue;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">.s-black</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  backgroud</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">#000</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">@media</span><span style="color:#E1E4E8"> m-large {</span></span>
+<span class="line"><span style="color:#E1E4E8">  </span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h4 id="5-配置css-moduleswebpack">5. 配置css-modules(webpack)</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#79B8FF">module</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">exports</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  module: {</span></span>
+<span class="line"><span style="color:#E1E4E8">    rules: [</span></span>
+<span class="line"><span style="color:#E1E4E8">      {</span></span>
+<span class="line"><span style="color:#E1E4E8">        test:</span><span style="color:#9ECBFF"> /</span><span style="color:#85E89D;font-weight:bold">\.</span><span style="color:#DBEDFF">css</span><span style="color:#F97583">$</span><span style="color:#9ECBFF">/</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">        use: [</span></span>
+<span class="line"><span style="color:#E1E4E8">          {</span></span>
+<span class="line"><span style="color:#E1E4E8">            loader: </span><span style="color:#9ECBFF">&#39;css-loader&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">            options: {</span></span>
+<span class="line"><span style="color:#E1E4E8">              modules: {</span></span>
+<span class="line"><span style="color:#6A737D">                /** auto为true, 将识别xxx.module.css的格式为css modules,对xxx.css不会</span></span>
+<span class="line"><span style="color:#6A737D">                  编译成css modules的格式</span></span>
+<span class="line"><span style="color:#6A737D">                */</span></span>
+<span class="line"><span style="color:#E1E4E8">                auto: </span><span style="color:#79B8FF">true</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#6A737D">                // 开发环境使用[path][name]__[local]方便调试, 生成环境直接[hash64]输出类名</span></span>
+<span class="line"><span style="color:#E1E4E8">                localIdentName: </span><span style="color:#9ECBFF">&#39;[path][name]__[local]&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#6A737D">                /** 开启es6导出格式, 开启后可以使用css modules变量功能,</span></span>
+<span class="line"><span style="color:#6A737D">              同时组件中导入样式 可以直接 import { container } from &#39;index.module.css&#39;</span></span>
+<span class="line"><span style="color:#6A737D">                */</span></span>
+<span class="line"><span style="color:#E1E4E8">                namedExport: </span><span style="color:#79B8FF">true</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#6A737D">                // 使用驼峰格式</span></span>
+<span class="line"><span style="color:#E1E4E8">                exportLocalsConvention: </span><span style="color:#9ECBFF">&#39;camelCaseOnly&#39;</span></span>
+<span class="line"><span style="color:#E1E4E8">              },</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">          },</span></span>
+<span class="line"><span style="color:#E1E4E8">        ]</span></span>
+<span class="line"><span style="color:#E1E4E8">      },</span></span>
+<span class="line"><span style="color:#E1E4E8">    ]</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h2 id="总结">总结</h2>
+<p>css-modules优势</p>
+<ol>
+<li>每个css文件只适用于被引用的那个组件, 不会影响到全局范围内的其他组件 (没有全局作用域, 无样式污染问题)</li>
+<li>一个组件的样式完全来源于一个css文件(全局覆盖样式除外)</li>
+<li>显性依赖 (帮助开发人员在代码结构中更好了解到组件的样式依赖)</li>
+</ol>
+<p>ps. 如果你不想写细粒度的样式,和通用的样式 想直接使用预定义好的css类名, 那么推荐使用 <a href="https://tailwindcss.com/">tailwindcss</a></p>
+<h2 id="参考">参考</h2>
+<ol>
+<li><a href="https://glenmaddern.com/articles/css-modules">https://glenmaddern.com/articles/css-modules</a></li>
+<li><a href="https://github.com/css-modules/css-modules">https://github.com/css-modules/css-modules</a></li>
+</ol> </div> </article> <section class="mx-auto max-w-screen-lg px-7 lg:px-0 py-10 mb-5 flex flex-col lg:flex-row flex-nowrap gap-10 items-center"> <img src="/_astro/songlibin.cfc1d0bd_dCEK0.webp" class="relative w-[150px] lg:w-[220px] rounded-full" alt="Author's photo" width="200" height="200" loading="lazy" decoding="async"> <div class="
+            prose lg:prose-xl max-w-none 
+            prose-headings:font-bold prose-headings:text-pacamara-accent 
+            prose-p:text-pacamara-primary/70 lg:prose-p:text-[18px] prose-p:transition-all prose-p:duration-300 
+            prose-a:font-semibold prose-a:text-pacamara-dark prose-a:hover:text-pacamara-pink prose-a:no-underline prose-a:transition-all prose-a:duration-300
+            prose-strong:font-normal 
+            prose-headings:font-pacamara-space prose-h2:mb-7
+            dark:prose-a:text-white dark:prose-a:hover:text-pacamara-accent dark:prose-p:text-white/70
+        "> <h3>宋黎斌</h3> <p>我在阿里动物园瓴羊担任前端开发者, 兼前端架构师(学习中😎)。我时常探索在react生态圈, 对一切web知识感到好奇, 关注我和我一起探索前端吧</p> </div> </section> <div class="w-full h-[3px] overflow-hidden gradient-line"></div> <div class="pt-10 mb-7 bg-gradient-to-b from-pacamara-dark/[0.05] to-pacamara-dark[0 dark:bg-gradient-to-b dark:from-bg-black/50 to-bg-black/0"> <h2 class="container mx-auto max-w-screen-lg px-7 text-xl text-pacamara-secondary font-bold mb-7">See other articles:</h2> <section class="container mx-auto max-w-screen-lg px-7 py-10 mb-10"> <article class="
+        group
+        lg:mb-[50px] mb-10 last:mb-0 prose lg:prose-xl max-w-none 
+        prose-headings:font-bold prose-headings:text-pacamara-accent 
+        prose-p:text-pacamara-primary/70 lg:prose-p:text-[18px] prose-p:transition-all prose-p:duration-300 
+        prose-a:font-semibold prose-a:text-pacamara-dark prose-a:hover:text-pacamara-pink prose-a:no-underline prose-a:transition-all prose-a:duration-300
+        prose-strong:font-normal 
+        prose-headings:font-pacamara-space prose-h2:mb-7 prose-h2:mt-0
+        prose-img:mt-0 prose-img:mb-0
+        dark:prose-a:text-white dark:prose-a:hover:text-pacamara-accent dark:prose-p:text-white/70
+    "> <div class="grid grid-cols-1 lg:grid-cols-[200px_auto] md:grid-cols-[200px_auto] gap-10 items-center"> <div class="post_image"> <a href="/blog/sink1"> <img src="/_astro/slide-1.6fe3f964_Z28U8FD.webp" alt="undefinedThumbnail" class="rounded-[15px] image-shine object-cover h-[200px] -rotate-2" width="750" height="937" loading="lazy" decoding="async"> </a> </div> <div class="post_intro"> <h2> <a href="/blog/sink1" class="text-pacamara-dark hover:text-pacamara-accent"> MD Kitchen Sink </a> </h2> <p> Here at Qode Interactive, we believe typography should be approached with equal focus and care as any other design element. It’s not just that the fonts “carry” the text, they also imbue the design with particular psychological values and convey specific </p> <p class="flex flex-row flex-wrap gap-5 items-center mt-5 group-last:mb-0"> <span class="group text-[16px] bg-transparent border-pacamara-secondary border-[1px] leading-none rounded-full flex flex-row content-center items-center h-[34px] px-3 text-pacamara-secondary"><span>dev</span></span> <small class="
+        text-pacamara-primary/50 font-pacamara-space tracking-widest transition-all duration-300 text-[16px]
+        dark:text-white/40
+    "> 30-06-2023
+— 5 min read
+</small> </p> </div> </div> <div class="w-full h-[1px] mt-10 lg:mt-[50px] overflow-hidden gradient-line group-last:hidden"></div> </article> </section> </div>  <div class="w-full h-[1px] overflow-hidden gradient-line"></div> <div class="py-14 transition-all duration-300 bg-gradient-to-r from-pacamara-secondary/10 to-pacamara-accent/10 dark:bg-gradient-to-r dark:from-pacamara-accent/[2%] dark:to-pacamara-secondary/[5%]"> <footer class="container mx-auto max-w-screen-xl flex flex-initial lg:flex-row flex-col gap-10 items-center px-7"> <div class="logo flex-none"> <a href="/" class="font-bold font-pacamara-space text-lg hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">Libin Song</a> </div> <ul class="list-none text-[14px] font-normal flex flex-initial flex-row content-center items-center gap-x-[35px]"> <!-- <SocialIcon socialUrl={config?.social?.dribbble} socialType="dribbble" />
+
+            <SocialIcon socialUrl={config?.social?.facebook} socialType="facebook" /> --> <li><a href="https://github.com/webMasterMrBin" target="_blank" aria-label="githublink"><svg class="w-auto h-[15px] transition-all duration-300 fill-pacamara-primary/60 hover:fill-pacamara-secondary dark:fill-pacamara-accent dark:hover:fill-pacamara-secondary" viewBox="0 0 496 512" astro-icon="github"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></li> <!-- <SocialIcon socialUrl={config?.social?.instagram} socialType="instagram" />
+
+            <SocialIcon socialUrl={config?.social?.mastodon} socialType="mastodon" />
+
+            <SocialIcon socialUrl={config?.social?.pinterest} socialType="pinterest" />
+
+            <SocialIcon socialUrl={config?.social?.skype} socialType="skype" />
+
+            <SocialIcon socialUrl={config?.social?.twitter} socialType="twitter" /> --> </ul> <div class="grow lg:text-right"> <span class="text-[14px] text-pacamara-dark/40 transition-all duration-300 dark:text-pacamara-white/40">
+made <span class="text-pacamara-accent">&hearts;</span> by <a href="https://maciekpalmowski.dev/" target="_blank" class="transition-all duration-300 text-pacamara-dark/60 dark:text-pacamara-white/60 hover:text-pacamara-accent">Astro</a> </span> </div> </footer> </div> </body></html>

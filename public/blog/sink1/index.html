@@ -1,0 +1,260 @@
+<!DOCTYPE html><html lang="zh-CN" style="font-size: 14px"> <head><script>
+        
+        const setDarkMode = () => {
+            document.documentElement.classList.add('dark')
+            if (localStorage.darkMode === 'true' || (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark')
+                localStorage.darkMode = 'true';
+            } else {
+                document.documentElement.classList.remove('dark')
+                localStorage.darkMode = 'false';
+            }
+        }
+
+        setDarkMode();
+        // // Runs on view transitions navigation
+        document.addEventListener('astro:after-swap', setDarkMode);
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="view-transition" content="same-origin"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="./rss.xml"><title>MD Kitchen Sink | Pacamara ☕</title><meta name="title" content="MD Kitchen Sink | Pacamara ☕"><meta name="description" content="Aromatic brew, pure indulgence, exquisite satisfaction.Default description"><!-- Open Graph Tags (Facebook) --><meta property="og:type" content="blog"><meta property="og:title" content="MD Kitchen Sink | Pacamara ☕"><meta property="og:url" content="https://pacamara-astro-6y7xr.kinsta.page/blog/sink1/"><meta property="og:description" content="Aromatic brew, pure indulgence, exquisite satisfaction.Default description"><meta property="og:image" content="https://pacamara-astro-6y7xr.kinsta.page/_astro/slide-1.6fe3f964.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:title" content="MD Kitchen Sink | Pacamara ☕"><meta property="twitter:url" content="https://pacamara-astro-6y7xr.kinsta.page/blog/sink1/"><meta property="twitter:description" content="Aromatic brew, pure indulgence, exquisite satisfaction.Default description"><meta property="twitter:image" content="/_astro/slide-1.6fe3f964.jpg"><!-- <link rel="preload" href="/fonts/inter-v12-latin_latin-ext-regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/inter-v12-latin_latin-ext-700.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/space-grotesk-v15-latin_latin-ext-regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/space-grotesk-v15-latin_latin-ext-600.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/space-grotesk-v15-latin_latin-ext-700.woff2" as="font" crossorigin> --><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/_astro/_slug_.92943a59.css" /><script type="module" src="/_astro/hoisted.41e41f80.js"></script><style>[data-astro-transition-scope="astro-t25pmcvj-1"] { view-transition-name: astro-t25pmcvj-1; }@layer astro { ::view-transition-old(astro-t25pmcvj-1) { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(astro-t25pmcvj-1) { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(astro-t25pmcvj-1) { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(astro-t25pmcvj-1) { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-t25pmcvj-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-t25pmcvj-1"] { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-t25pmcvj-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-t25pmcvj-1"] { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-t25pmcvj-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-t25pmcvj-1"] { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-t25pmcvj-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-t25pmcvj-1"] { 
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head> <body class="font-pacamara-inter transition-all duration-300 bg-white dark:bg-pacamara-dark" data-astro-transition-scope="astro-t25pmcvj-1"> <div class="navigation flex-1 hidden absolute top-0 left-0 w-full bg-pacamara-white dark:bg-pacamara-dark transition-all duration-300 p-7 pt-[112px] z-10 shadow-2xl" id="navigation_wrapper"> <nav> <ul class="list-none text-[14px] font-normal flex flex-initial flex-col md:flex-row gap-5"> <li> <a href="/" class="opacity-60 text-pacamara-primary hover:opacity-100 hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">Home</a> </li> <li> <a href="/blog" class="opacity-60 text-pacamara-primary hover:opacity-100 hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">Blog</a> </li> <li> <a href="/about-me" class="opacity-60 text-pacamara-primary hover:opacity-100 hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">About me</a> </li> </ul> </nav> </div> <header class="container mx-auto max-w-screen-xl px-7 py-10 bg-white flex flex-initial flex-row gap-10 items-center justify-between transition-all duration-300 dark:bg-pacamara-dark relative z-20"> <div class="logo flex-none"> <a href="/" class="font-bold font-pacamara-space text-lg hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">Libin Song</a> </div> <div class="navigation flex-1 hidden md:block"> <nav> <ul class="list-none text-[14px] font-normal flex flex-initial flex-col md:flex-row gap-5"> <li> <a href="/" class="opacity-60 text-pacamara-primary hover:opacity-100 hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">Home</a> </li> <li> <a href="/blog" class="opacity-60 text-pacamara-primary hover:opacity-100 hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">Blog</a> </li> <li> <a href="/about-me" class="opacity-60 text-pacamara-primary hover:opacity-100 hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">About me</a> </li> </ul> </nav> </div> <div class="relative flex flex-initial flex-row items-center gap-5"> <button id="mode_switcher" class="group" title="Switch mode"> <svg height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" class="w-8 h-auto fill-pacamara-secondary transition-all duration-300 hover:fill-pacamara-accent dark:fill-white dark:hover:fill-pacamara-accent"> <path d="m12 18a6 6 0 1 1 6-6 6 6 0 0 1 -6 6zm0-10a4 4 0 1 0 4 4 4 4 0 0 0 -4-4z"></path><path d="m12 15a1 1 0 0 1 -1-1v-4a1 1 0 0 1 1-1 3 3 0 0 1 0 6z"></path><path d="m12 5a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1z"></path><path d="m17.66 7.34a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29z"></path><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2z"></path><path d="m18.36 19.36a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path><path d="m12 22a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1z"></path><path d="m5.64 19.36a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24z"></path><path d="m4 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2z"></path><path d="m6.34 7.34a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29z"></path></svg> </button>  <button id="menu_toggle" class="block md:hidden text-white" type="button" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation"> <svg class="w-8 h-auto fill-pacamara-dark stroke-pacamara-dark transition-all duration-300 hover:fill-pacamara-accent hover:stroke-pacamara-accent dark:fill-pacamara-accent dark:stroke-pacamara-accent dark:hover:fill-pacamara-secondary dark:hover:stroke-pacamara-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg> </button>  </div> </header>  <article class="px-7 pt-10 mx-auto w-full"> <div class="mx-auto
+      prose lg:prose-xl prose-headings:font-bold prose-headings:text-pacamara-dark prose-headings:mb-3
+      "> <h1 class="transition-all duration-300 dark:text-white">MD Kitchen Sink</h1> <p class="flex flex-row flex-wrap gap-5 items-center font-pacamara-space mx-auto max-w-screen-lg mb-7"> <span class="group text-[16px] bg-transparent border-pacamara-secondary border-[1px] leading-none rounded-full flex flex-row content-center items-center h-[34px] px-3 text-pacamara-secondary"><span>dev</span></span> <small class="
+        text-pacamara-primary/50 font-pacamara-space tracking-widest transition-all duration-300 text-[16px]
+        dark:text-white/40
+    "> 30-06-2023
+— 5 min read
+</small> </p> </div> <img src="/_astro/slide-1.6fe3f964_Z28U8FD.webp" alt="" loading="eager" decoding="sync" class="block relative mx-auto mt-10 object-cover h-72 md:h-[350px] image-shine rounded-[15px]" width="1200" height="250"> <div class="
+        lg:px-0 pt-10 mb-5 mx-auto
+        prose lg:prose-xl
+        prose-headings:transition-all prose-headings:duration-300 prose-headings:font-pacamara-space prose-headings:font-bold prose-headings:text-pacamara-accent prose-headings:mb-0 prose-headings:pb-3 prose-headings:mt-6
+        prose-p:transition-all prose-p:duration-300 prose-p:text-pacamara-primary/80 
+        prose-li:transition-all prose-li:duration-300 prose-li:text-pacamara-primary/80
+        prose-td:transition-all prose-td:duration-300 prose-td:text-pacamara-primary/80
+        prose-a:underline prose-a:font-semibold prose-a:transition-all prose-a:duration-300 prose-a:text-pacamara-accent hover:prose-a:text-pacamara-dark
+        prose-strong:transition-all prose-strong:duration-300 prose-strong:font-bold
+        prose-hr:transition-all prose-hr:duration-300 prose-hr:border-pacamara-secondary/40
+        prose-img:rounded-lg prose-img:mx-auto 
+        prose-code:transition-all prose-code:duration-300 prose-code:text-pacamara-dark
+        dark:prose-headings:text-pacamara-accent dark:prose-p:text-white/70 dark:prose-a:text-white dark:hover:prose-a:text-pacamara-accent dark:prose-strong:text-white dark:prose-li:text-white dark:prose-code:text-white dark:prose-td:text-white/70 dark:prose-hr:border-pacamara-accent/30 dark:prose-tr:border-pacamara-accent/30 dark:prose-thead:border-pacamara-accent/30
+      "> <h2 id="headers">Headers</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ipsum a augue hendrerit mattis ut non ante. Vivamus sagittis neque a ligula porttitor, eu gravida arcu viverra. Proin metus ligula, luctus maximus consequat ut, finibus a turpis. Quisque lectus ex, euismod a accumsan vel, fermentum non odio. Suspendisse facilisis sem metus.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ipsum a augue hendrerit mattis ut non ante. Vivamus sagittis neque a ligula porttitor, eu gravida arcu viverra. Proin metus ligula, luctus maximus consequat ut, finibus a turpis. Quisque lectus ex, euismod a accumsan vel, fermentum non odio. Suspendisse facilisis sem metus.</p>
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<p>Alternatively, for H1 and H2, an underline-ish style:</p>
+<h1 id="alt-h1">Alt-H1</h1>
+<h2 id="alt-h2">Alt-H2</h2>
+<h2 id="emphasis">Emphasis</h2>
+<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+<p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
+<h2 id="lists">Lists</h2>
+<ol>
+<li>First ordered list item</li>
+<li>Another item</li>
+</ol>
+<ul>
+<li>Unordered sub-list.</li>
+</ul>
+<ol>
+<li>
+<p>Actual numbers don’t matter, just that it’s a number</p>
+</li>
+<li>
+<p>Ordered sub-list</p>
+</li>
+<li>
+<p>And another item.</p>
+<p>You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we’ll use three here to also align the raw Markdown).</p>
+<p>To have a line break without a paragraph, you will need to use two trailing spaces.<br/>
+Note that this line is separate, but within the same paragraph.<br/>
+(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</p>
+</li>
+</ol>
+<ul>
+<li>Unordered list can use asterisks</li>
+</ul>
+<ul>
+<li>Or minuses</li>
+</ul>
+<ul>
+<li>Or pluses</li>
+</ul>
+<h2 id="links">Links</h2>
+<p>There are two ways to create links.</p>
+<p><a href="https://www.google.com">I’m an inline-style link</a></p>
+<p><a href="https://www.google.com" title="Google's Homepage">I’m an inline-style link with title</a></p>
+<p><a href="https://www.mozilla.org">I’m a reference-style link</a></p>
+<p><a href="../blob/master/LICENSE">I’m a relative reference to a repository file</a></p>
+<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
+<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a>.</p>
+<p>Some text to show that the reference links can follow later.</p>
+<h2 id="images">Images</h2>
+<p>Here’s our logo (hover to see the title text):</p>
+<p>Inline-style:
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1"/></p>
+<img src="/_astro/slide-1.6fe3f964_Z28U8FD.webp" alt="" width="500" height="200" loading="lazy" decoding="async">
+<h2 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h2>
+<p>Code blocks are part of the Markdown spec, but syntax highlighting isn’t. However, many renderers — like Github’s and <em>Markdown Here</em> — support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. <em>Markdown Here</em> supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the <a href="http://softwaremaniacs.org/media/soft/highlight/test.html">highlight.js demo page</a>.</p>
+<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+<p>Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks — they’re easier and only they support syntax highlighting.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#F97583">var</span><span style="color:#E1E4E8"> s </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> &quot;JavaScript syntax highlighting&quot;</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#B392F0">alert</span><span style="color:#E1E4E8">(s);</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#E1E4E8">s </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> &quot;Python syntax highlighting&quot;</span></span>
+<span class="line"><span style="color:#79B8FF">print</span><span style="color:#E1E4E8"> s</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span>No language indicated, so no syntax highlighting in Markdown Here (varies on Github). </span></span>
+<span class="line"><span>But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.</span></span></code></pre>
+<h2 id="tables">Tables</h2>
+<p>Tables aren’t part of the core Markdown spec, but they are part of GFM and <em>Markdown Here</em> supports them. They are an easy way of adding tables to your email — a task that would otherwise require copy-pasting from another application.</p>
+<p>Colons can be used to align columns.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Tables</th><th align="center">Are</th><th align="right">Cool</th></tr></thead><tbody><tr><td>col 3 is</td><td align="center">right-aligned</td><td align="right">$1600</td></tr><tr><td>col 2 is</td><td align="center">centered</td><td align="right">$12</td></tr><tr><td>zebra stripes</td><td align="center">are neat</td><td align="right">$1</td></tr></tbody></table>
+<p>There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don’t need to make the raw Markdown line up prettily. You can also use inline Markdown.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Markdown</th><th>Less</th><th>Pretty</th></tr></thead><tbody><tr><td><em>Still</em></td><td><code>renders</code></td><td><strong>nicely</strong></td></tr><tr><td>1</td><td>2</td><td>3</td></tr></tbody></table>
+<h2 id="blockquotes">Blockquotes</h2>
+<blockquote>
+<p>Blockquotes are very handy in email to emulate reply text.
+This line is part of the same quote.</p>
+</blockquote>
+<p>Quote break.</p>
+<blockquote>
+<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
+</blockquote>
+<h2 id="horizontal-rule">Horizontal Rule</h2>
+<p>Three or more…</p>
+<hr/>
+<p>Hyphens</p>
+<hr/>
+<p>Asterisks</p>
+<hr/>
+<p>Underscores</p>
+<h2 id="line-breaks">Line Breaks</h2>
+<p>My basic recommendation for learning how line breaks work is to experiment and discover — hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You’ll soon learn to get what you want. “Markdown Toggle” is your friend.</p>
+<p>Here are some things to try out:</p>
+<p>Here’s a line for us to start with.</p>
+<p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
+<p>This line is also begins a separate paragraph, but…<br/>
+This line is only separated by a single newline, so it’s a separate line in the <em>same paragraph</em>.</p>
+<p>(Technical note: <em>Markdown Here</em> uses GFM line breaks, so there’s no need to use MD’s two-space line breaks.)</p>
+<h2 id="youtube-videos">YouTube Videos</h2>
+<p>They can’t be added directly but you can add an image with a link to the video like this:</p>
+<p>Or, in pure Markdown, but losing the image sizing and border:</p> </div> </article> <section class="mx-auto max-w-screen-lg px-7 lg:px-0 py-10 mb-5 flex flex-col lg:flex-row flex-nowrap gap-10 items-center"> <img src="/_astro/songlibin.cfc1d0bd_dCEK0.webp" class="relative w-[150px] lg:w-[220px] rounded-full" alt="Author's photo" width="200" height="200" loading="lazy" decoding="async"> <div class="
+            prose lg:prose-xl max-w-none 
+            prose-headings:font-bold prose-headings:text-pacamara-accent 
+            prose-p:text-pacamara-primary/70 lg:prose-p:text-[18px] prose-p:transition-all prose-p:duration-300 
+            prose-a:font-semibold prose-a:text-pacamara-dark prose-a:hover:text-pacamara-pink prose-a:no-underline prose-a:transition-all prose-a:duration-300
+            prose-strong:font-normal 
+            prose-headings:font-pacamara-space prose-h2:mb-7
+            dark:prose-a:text-white dark:prose-a:hover:text-pacamara-accent dark:prose-p:text-white/70
+        "> <h3>宋黎斌</h3> <p>我在阿里动物园瓴羊担任前端开发者, 兼前端架构师(学习中😎)。我时常探索在react生态圈, 对一切web知识感到好奇, 关注我和我一起探索前端吧</p> </div> </section> <div class="w-full h-[3px] overflow-hidden gradient-line"></div> <div class="pt-10 mb-7 bg-gradient-to-b from-pacamara-dark/[0.05] to-pacamara-dark[0 dark:bg-gradient-to-b dark:from-bg-black/50 to-bg-black/0"> <h2 class="container mx-auto max-w-screen-lg px-7 text-xl text-pacamara-secondary font-bold mb-7">See other articles:</h2> <section class="container mx-auto max-w-screen-lg px-7 py-10 mb-10"> <article class="
+        group
+        lg:mb-[50px] mb-10 last:mb-0 prose lg:prose-xl max-w-none 
+        prose-headings:font-bold prose-headings:text-pacamara-accent 
+        prose-p:text-pacamara-primary/70 lg:prose-p:text-[18px] prose-p:transition-all prose-p:duration-300 
+        prose-a:font-semibold prose-a:text-pacamara-dark prose-a:hover:text-pacamara-pink prose-a:no-underline prose-a:transition-all prose-a:duration-300
+        prose-strong:font-normal 
+        prose-headings:font-pacamara-space prose-h2:mb-7 prose-h2:mt-0
+        prose-img:mt-0 prose-img:mb-0
+        dark:prose-a:text-white dark:prose-a:hover:text-pacamara-accent dark:prose-p:text-white/70
+    "> <div class="grid grid-cols-1 lg:grid-cols-[200px_auto] md:grid-cols-[200px_auto] gap-10 items-center"> <div class="post_image"> <a href="/blog/css-module"> <img src="/_astro/css-modules-logo.109c4607_1iXhR4.webp" alt="undefinedThumbnail" class="rounded-[15px] image-shine object-cover h-[200px] -rotate-2" width="750" height="543" loading="lazy" decoding="async"> </a> </div> <div class="post_intro"> <h2> <a href="/blog/css-module" class="text-pacamara-dark hover:text-pacamara-accent"> css-modules 使用说明 </a> </h2> <p> 学习如何解决传统css命名冲突,作用域污染和样式维护困难的问题, 以及如何配置css-modules </p> <p class="flex flex-row flex-wrap gap-5 items-center mt-5 group-last:mb-0"> <span class="group text-[16px] bg-transparent border-pacamara-secondary border-[1px] leading-none rounded-full flex flex-row content-center items-center h-[34px] px-3 text-pacamara-secondary"><span>css</span></span> <small class="
+        text-pacamara-primary/50 font-pacamara-space tracking-widest transition-all duration-300 text-[16px]
+        dark:text-white/40
+    "> 30-06-2023
+— 5 min read
+</small> </p> </div> </div> <div class="w-full h-[1px] mt-10 lg:mt-[50px] overflow-hidden gradient-line group-last:hidden"></div> </article> </section> </div>  <div class="w-full h-[1px] overflow-hidden gradient-line"></div> <div class="py-14 transition-all duration-300 bg-gradient-to-r from-pacamara-secondary/10 to-pacamara-accent/10 dark:bg-gradient-to-r dark:from-pacamara-accent/[2%] dark:to-pacamara-secondary/[5%]"> <footer class="container mx-auto max-w-screen-xl flex flex-initial lg:flex-row flex-col gap-10 items-center px-7"> <div class="logo flex-none"> <a href="/" class="font-bold font-pacamara-space text-lg hover:text-pacamara-accent transition-all duration-300 dark:text-white dark:hover:text-pacamara-accent">Libin Song</a> </div> <ul class="list-none text-[14px] font-normal flex flex-initial flex-row content-center items-center gap-x-[35px]"> <!-- <SocialIcon socialUrl={config?.social?.dribbble} socialType="dribbble" />
+
+            <SocialIcon socialUrl={config?.social?.facebook} socialType="facebook" /> --> <li><a href="https://github.com/webMasterMrBin" target="_blank" aria-label="githublink"><svg class="w-auto h-[15px] transition-all duration-300 fill-pacamara-primary/60 hover:fill-pacamara-secondary dark:fill-pacamara-accent dark:hover:fill-pacamara-secondary" viewBox="0 0 496 512" astro-icon="github"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></li> <!-- <SocialIcon socialUrl={config?.social?.instagram} socialType="instagram" />
+
+            <SocialIcon socialUrl={config?.social?.mastodon} socialType="mastodon" />
+
+            <SocialIcon socialUrl={config?.social?.pinterest} socialType="pinterest" />
+
+            <SocialIcon socialUrl={config?.social?.skype} socialType="skype" />
+
+            <SocialIcon socialUrl={config?.social?.twitter} socialType="twitter" /> --> </ul> <div class="grow lg:text-right"> <span class="text-[14px] text-pacamara-dark/40 transition-all duration-300 dark:text-pacamara-white/40">
+made <span class="text-pacamara-accent">&hearts;</span> by <a href="https://maciekpalmowski.dev/" target="_blank" class="transition-all duration-300 text-pacamara-dark/60 dark:text-pacamara-white/60 hover:text-pacamara-accent">Astro</a> </span> </div> </footer> </div> </body></html>
