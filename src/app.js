@@ -5,9 +5,7 @@ const app = express();
 const port = 4000;
 
 app.use(express.static(path.join(__dirname, '../public'), {
-  setHeaders: (res) => {
-    res.set('Cache-Control', 'no-cache');
-  }
+  maxAge: 1000 * 60 * 60 * 24 * 3
 }));
 
 app.get('/about-me', (req, res) => {
@@ -24,7 +22,6 @@ app.get('/blog', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-  res.set('Cache-Control', 'no-cache');
   res.sendFile(path.join(__dirname, '../public/index.html'));
 })
 
