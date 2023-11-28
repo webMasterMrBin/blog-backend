@@ -6,7 +6,7 @@ const port = 4000;
 
 app.use(express.static(path.join(__dirname, '../public'), {
   setHeaders: (res, path, stat) => {
-    res.set('cache-control', `must-revalidate, max-age=${20}`);
+    res.set('cache-control', `must-revalidate, max-age=${60 * 60 * 24}`);
   }
 }));
 
